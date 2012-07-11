@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  scoreable_type: MyString
+  scoreable_id: 1
+
+two:
+  scoreable_type: MyString
+  scoreable_id: 1
