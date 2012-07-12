@@ -14,10 +14,12 @@
 ActiveRecord::Schema.define(:version => 20120711204952) do
 
   create_table "competition_score_entries", :force => true do |t|
+    t.string   "score_entryable_type"
+    t.integer  "score_entryable_id"
     t.integer  "score_id"
-    t.integer  "score"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "amount"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
   end
 
   create_table "competition_scores", :force => true do |t|
