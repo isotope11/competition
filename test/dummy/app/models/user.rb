@@ -3,4 +3,8 @@ class User < ActiveRecord::Base
   attr_accessible :id
 
   has_score
+
+  def to_s
+    "Adam Gamble"
+  end
 end
