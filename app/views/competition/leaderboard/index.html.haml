@@ -1,0 +1,12 @@
+%h1 Leaderboard
+
+%table
+  %tr
+    %th Rank
+    %th 
+    %th Total
+  -@scores.each_with_index do |score, index|
+    %tr
+      %td= index + 1
+      %td= score.scoreable
+      %td= score.score_entries.sum(:amount)
